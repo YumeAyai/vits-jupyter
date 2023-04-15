@@ -63,6 +63,6 @@ See [MoeGoe](https://github.com/CjangCjengh/MoeGoe)
 # Running in Docker
 
 ```sh
-docker run -itd --gpus all --name "Container name" -e NVIDIA_DRIVER_CAPABILITIES=compute,utility -e NVIDIA_VISIBLE_DEVICES=all "Image name"
+docker run -itd --gpus all --name "Container name" -e NVIDIA_DRIVER_CAPABILITIES=compute,utility -e NVIDIA_VISIBLE_DEVICES=all -p 8888:8888 -p 6006:6006 "Image name" 
 ```
 
